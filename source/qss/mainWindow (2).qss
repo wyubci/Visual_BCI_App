@@ -1,0 +1,206 @@
+/* ============================================================
+   GLOBAL MINIMALIST TECH THEME
+   Visual BCI System - 2026
+   ============================================================ */
+
+/* --- General Window & Backgrounds --- */
+#HomeWindow, QWidget#HomeWindow {
+    background-color: #030303; /* Pure Black-Grey */
+    color: #cccccc;
+}
+
+QWidget {
+    background-color: transparent;
+    color: #cccccc;
+    font-family: "Segoe UI", "Microsoft YaHei";
+    font-size: 13px;
+    selection-background-color: #00E5FF; /* Cyan selection */
+    selection-color: #000000;
+}
+
+/* Specific Sub Windows Backgrounds */
+UserCreater, #deviceControlWindow, #keyboardWindow, #careControlWindow, #dualFrequencyWindow, #droneControlWindow, #carControlWindow, #stimTestWindow {
+    background-color: #030303;
+}
+
+/* --- Window Title Bar Controls --- */
+MinimizeButton, MaximizeButton {
+    qproperty-normalColor: #808080;
+    qproperty-normalBackgroundColor: transparent;
+    qproperty-hoverColor: #ffffff;
+    qproperty-hoverBackgroundColor: transparent;
+    qproperty-pressedColor: #00E5FF;
+}
+
+CloseButton {
+    qproperty-normalColor: #808080;
+    qproperty-hoverColor: #ff4d4d;
+}
+
+StandardTitleBar > QLabel {
+    color: #e0e0e0; 
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- Buttons (Ultra-Minimal / Flat) --- */
+QPushButton, ToolButton, PushButton {
+    background-color: transparent;
+    border: 1px solid #333333;
+    border-radius: 0px; /* Sharp corners */
+    padding: 6px 16px;
+    color: #a0a0a0;
+    font-family: "Consolas", "Segoe UI";
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+QPushButton:hover, ToolButton:hover, PushButton:hover {
+    border: 1px solid #00E5FF;
+    color: #00E5FF;
+    background-color: rgba(0, 229, 255, 0.05);
+}
+
+QPushButton:pressed, ToolButton:pressed, PushButton:pressed {
+    background-color: #00E5FF;
+    color: #000000;
+}
+
+PrimaryPushButton {
+    background-color: #00E5FF;
+    color: #000000;
+    border: none;
+    border-radius: 0px;
+    font-weight: bold;
+}
+PrimaryPushButton:hover {
+    background-color: #00C4D6;
+}
+
+/* --- Input Fields (Subtle) --- */
+QLineEdit, LineEdit {
+    background-color: #0a0a0a;
+    border: 1px solid #222222;
+    border-radius: 0px;
+    padding: 5px;
+    color: #00E5FF;
+    font-family: Consolas, monospace;
+    font-size: 12px;
+}
+
+QLineEdit:focus, LineEdit:focus {
+    border: 1px solid #00E5FF;
+    background-color: #050505;
+}
+
+/* --- ComboBox --- */
+QComboBox, ComboBox {
+    background-color: #0a0a0a;
+    border: 1px solid #222222;
+    border-radius: 0px;
+    padding: 4px 10px;
+    color: #cccccc;
+    font-family: Consolas, "Segoe UI";
+    font-size: 12px;
+}
+
+QComboBox:hover, ComboBox:hover {
+    border: 1px solid #444444;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+    background: transparent;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #0a0a0a;
+    border: 1px solid #333;
+    selection-background-color: #1a1a1a;
+    color: #cccccc;
+}
+
+/* --- Scroll Bars (Thin & Dark) --- */
+QScrollBar:vertical {
+    background-color: #030303;
+    width: 4px; /* Ultra Thin */
+    margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background-color: #333;
+    min-height: 20px;
+    border-radius: 0px;
+}
+QScrollBar::handle:vertical:hover {
+    background-color: #00E5FF;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* --- Specific Area Styles --- */
+
+/* Device State Area Header */
+#deviceStateArea {
+    border-bottom: 1px solid #1a1a1a;
+    background-color: #030303;
+}
+
+/* EEG Signal Charts Container */
+#eegSignalShow_area {
+    border: 1px solid #1a1a1a;
+    background-color: #030303;
+    border-radius: 0px;
+    margin: 5px;
+}
+
+/* Stimulate Areas */
+#stimulate_area, #keyboardWindow, #careControlWindow, #dualFrequencyWindow {
+    background-color: #000000;
+}
+
+/* Labels */
+QLabel, BodyLabel {
+    color: #888888;
+}
+
+StrongBodyLabel {
+    color: #e0e0e0;
+    font-weight: 600;
+}
+
+TitleLabel {
+    color: #00E5FF;
+    font-size: 20px;
+    font-weight: 300; /* Thin font */
+    letter-spacing: 2px;
+}
+
+/* --- Fixes for Legacy IDs --- */
+#fangxiang {
+    background-color: #111;
+    color: #00E5FF;
+    border: 1px solid #00E5FF;
+    border-radius: 0px;
+}
+
+#line {
+    background: #222;
+}
+
+/* Crosshair - Thin lines */
+#centerV, #centerH {
+    background: #00E5FF; 
+    max-width: 1px;
+    max-height: 1px;
+}
+
+#stim_test_area {
+    border-right: 1px solid #1a1a1a;
+}
+
+

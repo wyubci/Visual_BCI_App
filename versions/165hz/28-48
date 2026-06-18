@@ -1,0 +1,25 @@
+def get_reference_signal(self, num_harmonics, targets):
+    """
+    为每个目标频率生成参考信号
+    
+    参数:
+        num_harmonics: 谐波数量
+        targets: 目标频率列表
+        
+    返回:
+        reference_signals: 形状为[频率数量, 2*谐波数量, 采样点数]的参考信号数组
+    """
+    reference_signals = []
+    # 创建时间序列
+    t = np.arange(0, (self.T / self.Fs), step=1.0 / self.Fs)
+    
+    # 为每个目标频率生成参考信号
+    for f in targets:
+        reference_f = []
+        # 为每个谐波生成正弦和余弦信号
+        for h in range(1, num_harmonics + 1):
+            reference_f.append(np.sin(2 * np.pi * h * f * t)[0:self.T])  # 正弦信号
+            reference_f.append(np.cos(2 * np.pi * h * f * t)[0:self.T])  # 余弦信号
+        reference_signals.append(reference_f)
+    reference_signals = np.asarray(reference_signals)
+    return reference_signals 

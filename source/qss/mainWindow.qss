@@ -1,0 +1,91 @@
+#HomeWindow {
+    background: rgb(32, 32, 32);
+}
+
+UserCreater{
+    background: rgb(32, 32, 32);
+}
+
+MinimizeButton {
+    qproperty-normalColor: white;
+    qproperty-normalBackgroundColor: transparent;
+    qproperty-hoverColor: white;
+    qproperty-hoverBackgroundColor: rgba(255, 255, 255, 26);
+    qproperty-pressedColor: white;
+    qproperty-pressedBackgroundColor: rgba(255, 255, 255, 51)
+}
+
+MaximizeButton {
+    qproperty-normalColor: white;
+    qproperty-normalBackgroundColor: transparent;
+    qproperty-hoverColor: white;
+    qproperty-hoverBackgroundColor: rgba(255, 255, 255, 26);
+    qproperty-pressedColor: white;
+    qproperty-pressedBackgroundColor: rgba(255, 255, 255, 51)
+}
+
+CloseButton {
+    qproperty-normalColor: white;
+    qproperty-normalBackgroundColor: transparent;
+}
+
+StandardTitleBar > QLabel {
+    color: white;
+}
+
+QLabel#checkLabel {
+    color: white;
+}
+
+#fangxiang{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+#keyboardWindow{
+    background: rgb(0, 0, 0);
+}
+
+#stimulate_area{
+    background: rgb(0, 0, 0);
+}
+
+#careControlWindow{
+    background: rgb(0, 0, 0);
+}
+
+#dualFrequencyWindow{
+    background: rgb(0, 0, 0);
+}
+
+#line{
+    background: rgb(0, 0, 0);
+}
+
+#centerV{
+    background: rgb(255, 0, 0);
+}
+
+#centerH{
+    background: rgb(255, 0, 0);
+}
+/*#output_keyboard{*/
+/*    border: 1px solid white;*/
+/*}*/
+
+#deviceStateArea{
+    border-bottom: 1px solid rgb(239, 239, 239);
+}
+
+#eegSignalShowModule{
+    background: transparent;
+}
+
+#stim_test_area{
+    border-right: 1px solid rgb(239, 239, 239);
+}
+
+#fft_image{
+    background: transparent;
+}

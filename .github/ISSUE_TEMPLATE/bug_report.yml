@@ -1,0 +1,43 @@
+name: Bug report
+description: 报告代码、实验流程或文档问题
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: 项目
+      options:
+        - 机械臂 MI/咬肌 BCI
+        - SSVEP/TDCA
+        - 脑控小车/视觉 BCI
+        - 情绪脑电 EEG-fNIRS
+        - 语言想象康复 BCI
+        - jieba NLP 作业
+        - 仓库文档/模板
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 说明发生了什么，以及期望行为是什么。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 写出命令、输入文件和关键参数。
+  - type: textarea
+    id: logs
+    attributes:
+      label: 关键日志
+      description: 只粘贴必要片段，不要上传大型日志或数据。
+      render: text
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境
+      description: Python、conda、操作系统、设备或采集软件版本。

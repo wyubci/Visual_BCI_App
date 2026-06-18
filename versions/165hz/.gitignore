@@ -1,0 +1,44 @@
+# Python / Qt runtime
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and IDE files
+.conda/
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+
+# Logs, generated runtime data, and subject recordings
+logs/
+saveCarData/
+user/
+memories/session/
+test.mat
+dist/
+environment/*.lock.yml
+environment/*.lock.txt
+
+# Generated presentation/image exports
+ppt_result_export/
+ppt_template_export/
+ppt_v2_preview/
+ppt_v4_preview/
+ppt_v4_preview_fix/
+
+# Local scratch / benchmark scripts
+_tmp_*.py
+all_files.txt
+
+# Binary installers / wheels
+*.whl
+
+# OS noise
+Thumbs.db
+.DS_Store

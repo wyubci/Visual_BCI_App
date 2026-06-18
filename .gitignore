@@ -1,0 +1,60 @@
+# Python/cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and IDE files
+.conda/
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+.claude/
+
+# Logs, generated runtime data, subject recordings, and local outputs
+logs/
+saveCarData/
+user/
+memories/session/
+runtime_data/
+outputs/
+experiments/
+analysis_reports/
+benchmark_report/
+ExperimentResults/
+tmp_user_info/
+ppt_result_export/
+ppt_template_export/
+ppt_v2_preview/
+ppt_v4_preview/
+ppt_v4_preview_fix/
+dist/
+build/
+release/
+
+# Data, checkpoints, model weights, and local binary packages
+*.mat
+*.npz
+*.npy
+*.pt
+*.pth
+*.joblib
+*.pkl
+*.onnx
+*.dat
+*.whl
+*.zip
+
+# Logs/temp/OS noise
+*.log
+*.tmp
+*.part
+output.txt
+install_output.txt
+all_files.txt
+Thumbs.db
+.DS_Store

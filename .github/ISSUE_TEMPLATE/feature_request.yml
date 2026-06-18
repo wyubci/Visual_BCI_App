@@ -1,0 +1,37 @@
+name: Feature request
+description: 提出新功能、实验计划或文档补充
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: 项目
+      options:
+        - 机械臂 MI/咬肌 BCI
+        - SSVEP/TDCA
+        - 脑控小车/视觉 BCI
+        - 情绪脑电 EEG-fNIRS
+        - 语言想象康复 BCI
+        - jieba NLP 作业
+        - 仓库文档/模板
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: 目标
+      description: 说明希望新增或改进什么。
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: 建议方案
+      description: 可选，写出算法、依赖、数据或界面方案。
+  - type: textarea
+    id: references
+    attributes:
+      label: 参考资料
+      description: 比赛链接、论文、官方文档或相关代码。

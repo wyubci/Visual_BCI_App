@@ -1,0 +1,6 @@
+def __init__(self, num_harmonics, times, targets, Nh=8):
+    # ...
+    self.Nf = len(targets)        # 目标频率数量
+    # ...
+    # 生成参考信号
+    self.reference_signals = self.get_reference_signal(num_harmonics, targets) 

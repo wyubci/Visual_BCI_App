@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 数据与模型上传边界
+    url: ../blob/main/docs/DATA_AND_ARTIFACTS.md
+    about: 提交前请确认大数据、权重、缓存和虚拟环境不会进入 GitHub。
