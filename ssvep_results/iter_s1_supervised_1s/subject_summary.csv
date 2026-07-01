@@ -1,0 +1,9 @@
+﻿subject,method,accuracy,itr_bits_min
+1,EnsembleImprovedTDCA(alpha=0.20),1.0,79.82892142261159
+1,EnsembleImprovedTDCA(alpha=0.35),0.975,75.31698161878704
+1,EnsembleImprovedTDCA(alpha=0.50),1.0,79.82892142261159
+1,EnsembleImprovedTDCA(alpha=0.75),0.975,75.31698161878704
+1,ImprovedTDCA(alpha=0.35),1.0,79.82892142261159
+1,ImprovedTDCA(alpha=0.50),0.9875,77.57295152069932
+1,ImprovedTDCA(alpha=0.75),0.975,75.31698161878704
+1,TDCA,0.9916666666666667,78.3249414880034

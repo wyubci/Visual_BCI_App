@@ -1,0 +1,4 @@
+﻿method,mean_accuracy,std_accuracy,mean_itr_bits_min,std_itr_bits_min,subjects
+EnsembleImprovedTDCA(alpha=1.00),0.9958333333333332,,79.0769314553075,,1
+ImprovedTDCA(alpha=1.00),0.9958333333333332,,79.0769314553075,,1
+TDCA,0.9958333333333332,,79.0769314553075,,1
