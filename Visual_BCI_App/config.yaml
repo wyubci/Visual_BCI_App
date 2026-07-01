@@ -1,0 +1,52 @@
+subjectName: hc33
+userInfoPath: user
+currentUser: null
+sti_lst:
+- 8.0
+- 9.0
+- 10.0
+- 11.0
+- 12.0
+- 13.0
+- 14.0
+- 15.0
+- 15.8
+sti_phase_lst: null
+ssvep_grid_rows: 3
+ssvep_grid_cols: 3
+ssvep_grid_target_count: 9
+ssvep_fixations_per_block: 1
+candidateStiList:
+- 8
+- 10
+- 12
+- 14
+- 16
+- 18
+- 20
+- 22
+- 24
+- 26
+device_type: neuro_dance_tcp
+lsl_stream_name: BrainVision
+lsl_stream_type: EEG
+lsl_selected_channels:
+- 0
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+lsl_target_sample_rate: 250
+electrode_montage:
+  8ch:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
