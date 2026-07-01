@@ -1,0 +1,36 @@
+# Data
+saveCarData/
+*.mat
+*.npy
+*.npz
+*.zip
+*.whl
+*.dat
+*.dll
+*.pth
+*.pt
+*.ipynb
+
+# Cache & IDE
+__pycache__/
+*.pyc
+.venv/
+.claude/
+.idea/
+.vscode/
+*.swp
+
+# Logs & output
+logs/
+runtime_data/
+*.log
+*.txt
+!requirements*.txt
+
+# Misc
+165hz/
+install_robot_ssh_key.bat
+upload_code.bat
+setup_env.bat
+setup_env.ps1
+signal_preprocess.m
